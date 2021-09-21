@@ -1,0 +1,13 @@
+#! /bin/bash
+
+#for-loop with manual input
+for i in 1 2 3 4 5
+do
+  echo $i
+done
+
+#for-loop with condition in format of {beginning, ending, increment}
+for i in {0..20..2}
+do
+  echo $i
+done
