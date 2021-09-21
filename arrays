@@ -1,0 +1,40 @@
+#! /bin/bash
+
+#Initializing an array
+car=('BMW' 'Toyota' 'Honda' 'Rover')
+
+#Prints out all values of array
+echo "${car[@]}"
+
+#Prints out first element
+echo "${car[0]}"
+
+#Prints out numbered list of elements
+echo "${!car[@]}"
+
+#Prints out  number of all elements in array
+echo "${#car[@]}"
+
+#Removing element 2 of array
+unset car[2]
+
+#Prints out numbered list of elements
+echo "${!car[@]}"
+
+#Prints out  number of all elements in array
+echo "${#car[@]}"
+
+#Setting specific array element
+car[2]=Mercedes
+
+#Prints out all values of array
+echo "${car[@]}"
+
+#Prints out first element
+echo "${car[0]}"
+
+#Prints out numbered list of elements
+echo "${!car[@]}"
+
+#Prints out  number of all elements in array
+echo "${#car[@]}"
