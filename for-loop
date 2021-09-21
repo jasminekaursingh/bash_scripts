@@ -11,3 +11,9 @@ for i in {0..20..2}
 do
   echo $i
 done
+
+#conventional for-loop
+for (( i=0; i<5; i++ ))
+do
+  echo $i
+done
