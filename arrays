@@ -1,0 +1,13 @@
+#! /bin/bash
+
+#Initializes an array of any size
+args=("$@")
+
+#Takes string input and inputs them into array
+echo ${args[0]} ${args[1]} ${args[2]}
+
+#Prints all array elements
+echo $@
+
+#Prints number of elements in array
+echo $#
