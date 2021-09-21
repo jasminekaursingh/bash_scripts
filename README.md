@@ -1,2 +1,5 @@
 # bash_scripts
-A repo of beginner bash scripts from a crash course tutorial. I am keeping these for reference in future scripting and to have a lot of my beginner scripts :) Youtube tutorial: https://www.youtube.com/watch?v=e7BufAVwDiM&amp;list=WL&amp;index=2
+
+Beginner bash scripts coded in both Ubuntu and Kali Linux.
+For future references of some fundamentals that I know I will need and to keep a log of my progress in scripting :)
+Directly from coding alongside crash course https://www.youtube.com/watch?v=e7BufAVwDiM&list=WL&index=2
