@@ -1,0 +1,35 @@
+#! /bin/bash
+
+#String input from terminal
+echo "Enter String 1"
+read st1
+
+echo "Enter String 2"
+read st2
+
+#String comparisons
+if [ "$st1" == "$st2" ]
+then
+  echo "Strings match."
+else
+  echo "Strings don't match."
+fi
+
+if [ "$st1" \< "$st2" ]
+then
+  echo "$st1 is smaller than $st2"
+elif [ "$st1" \> "$st2" ]
+then
+  echo "$st2 is smaller than $st1"
+else
+  echo "$Both strings are equal."
+fi
+
+#Concatenation of strings
+c=$st1$st2
+
+echo $c
+
+#Lower case and upper case of string
+echo ${st1^}
+echo ${st1^^}
