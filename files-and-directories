@@ -1,0 +1,75 @@
+#! /bin/bash
+
+#Creation of new directory
+mkdir -p Directory2
+
+#Checking if user input is a directory that already exists
+echo "Enter directory name to check"
+read direct
+
+if [ -d "$direct" ]
+then
+        echo "$direct exists"
+else
+        echo "$direct doesn't exist"
+fi
+
+#Creation of user input as a file
+echo "Enter file name to create it"
+read fileName
+
+touch $fileName
+
+#Checking if user input is a file that already exists
+echo "Enter file name to check"
+read file
+
+if [ -f "$file" ]
+then
+        echo "$file exists"
+else
+        echo "$file doesn't exist"
+fi
+
+#Appending to a file
+echo "Enter file name that you want to append"
+read fileName2
+
+if [[ -f "$fileName2" ]]
+then
+        echo "Enter what you want to append to the file"
+        read fileText
+
+        #You can replace text rather than append to file by using > instead of >>
+        echo "$fileText" >> $fileName2
+else
+        echo "$fileName2 doesn't exist"
+fi
+
+#Read file
+echo "Enter filename from which you want to read"
+read fileName3
+
+if [[ -f "$fileName3" ]]
+then
+        while IFS= read -r line
+        do
+                echo "$line"
+        done < $fileName3
+else
+        echo "$fileName3 doesn't exist"
+fi
+
+#Deleting file
+echo "Enter filename you want to delete"
+read fileName4
+
+if [[ -f "$fileName4" ]]
+then
+        rm $fileName4
+        echo "File has been deleted"
+else
+        echo "$fileName4 doesn't exist"
+fi
+
+
