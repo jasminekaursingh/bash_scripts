@@ -1,0 +1,18 @@
+#! /bin/bash
+
+echo "Enter filename to search text from"
+read fileName
+
+if [[ -f $fileName ]]
+then
+        echo "Enter the text to search"
+        read grepVar
+
+        #-i for the lines that grepVar is in the file
+        #-n for the number of the line that grepVar appears in
+        #-c for how many times the grepVar is repeated in file  
+        #-v for is all of the lines that do not contain grepVar in it (inverted)
+        grep -i -n -c -v $grepVar $fileName
+else
+        echo "$fileName does not exist."
+fi
