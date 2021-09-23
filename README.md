@@ -1,4 +1,4 @@
-# scripts
+# python-scripts
 
-A repo for my scripting in both Bash and Python currently.
-Scripts are written from online courses I have taken.
+Branch for my scripting in Python.
+Scripted utilizing Pycharm IDE.
